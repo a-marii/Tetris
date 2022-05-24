@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Game"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#f9844a"
+        android:insetRight="8dp"
+        android:onClick="onClick"
+        android:text="exit" />
+        <Button
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#f3722c"
+            android:insetRight="8dp"
+            android:onClick="onClick"
+            android:text="try again" />
+    </LinearLayout>
+
+    <com.example.tetris.ui.GameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="499dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:insetRight="8dp"
+            android:onClick="onClick"
+            android:text="left" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/turn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FB774D"
+                android:insetLeft="8dp"
+                android:insetRight="8dp"
+                android:onClick="onClick"
+                android:text="turn" />
+
+            <Button
+                android:id="@+id/down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF9800"
+                android:insetLeft="8dp"
+                android:insetRight="8dp"
+                android:onClick="onClick"
+                android:text="down" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:insetRight="8dp"
+            android:onClick="onClick"
+            android:text="right" />
+    </LinearLayout>
+</LinearLayout>
+
